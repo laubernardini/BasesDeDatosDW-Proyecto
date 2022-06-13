@@ -11,11 +11,10 @@ Empleado.init({
         allowNull: false
     },
     dni: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(8),
         allowNull: false,
         validate: {
-            min: 6,
-            max: 8
+            min: 6
         }
     },
     salario: {
